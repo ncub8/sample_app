@@ -9,6 +9,6 @@ describe ApplicationHelper do
 		it "should include the base title" do
 			full_title("foo").should =~ /^Ruby on Rails Tutorial Sample App/
 		end
-		
+	end	
 				
 end
