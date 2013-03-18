@@ -30,5 +30,6 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
 
+  
   config.include Rails.application.routes.url_helpers
 end
