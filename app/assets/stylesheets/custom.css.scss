@@ -1,5 +1,13 @@
 @import "bootstrap";
 
+//mixins
+@mixin box_sizing{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
 $lightGray: #999;
 
 html{
@@ -101,6 +109,6 @@ footer{
 	clear: both;
 	float: left;
 	width: 100%;
-	margin-top: 45%;
+	margin-top: 45px;
 	@include box_sizing;
 }
