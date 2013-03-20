@@ -10,7 +10,7 @@ let(:base_title){ "Ruby on Rails Sample App"}
 	  before { visit root_path } 
 
 	  it {should have_selector('h1', text: 'Sample App')}
-	  it {should have_selector('title', "#{base_title}")}
+	  it {should have_selector('title', text: "#{base_title}")}
 	  it {should_not have_selector('title', text: '| Home')}
   
 	end
@@ -25,7 +25,7 @@ let(:base_title){ "Ruby on Rails Sample App"}
   describe "About Page" do
     before {visit about_path}
 
-    it {should have_selector('hi', text: "About Us")}
+    it {should have_selector('h1', text: "About Us")}
     it {should have_selector('title', text: "#{base_title} | About Us")}
     end
 	
